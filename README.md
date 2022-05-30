@@ -15,3 +15,21 @@
 ### [Lesson 07 - CodeAlong: Create and Read](https://github.com/Code-Institute-Solutions/postgresql-and-python/tree/main/07_codealong_create_and_read)
 
 ### [Lesson 08 - CodeAlong: Update and Delete](https://github.com/Code-Institute-Solutions/postgresql-and-python/tree/main/08_codealong_update_and_delete)
+
+  change to localhost and 5433
+  sudo -u postgres psql -c 'SHOW config_file'
+                 config_file   
+
+  /etc/postgresql/12/main/postgresql.conf
+
+
+  sudo lsof -i tcp:5432 xx
+  sudo lsof -i tcp:5433 yes
+
+  sudo service postgresql start
+
+# create user
+https://www3.ntu.edu.sg/home/ehchua/programming/sql/PostgreSQL_GetStarted.html
+
+#import .sql
+https://github.com/Code-Institute-Solutions/postgresql-and-python/blob/main/03_installing_the_libraries_and_setting_up/sql-psycopg2.py
